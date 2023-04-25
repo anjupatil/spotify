@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alkatra', cursive,sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color:skyblue ;
+
+}
+
+nav{
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+    margin: 0 -3vw;
+    
+    
+    
+    
+}
+.brand{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    width: 44px;
+}
+
+nav ul{
+    display: flex;
+
+    list-style: none;
+    
+    align-items: center;
+    
+    
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+img{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.container{
+    flex: 1;
+    background-color:cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.songList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.songItemContainer{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 10px;
+    
+}
+.songItem{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.songlistplay .timestamp{
+    display: flex;
+    gap: 30px;
+}
+
+#myProgressBar{
+    width: 80vw;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: rgb(48, 155, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.songInfo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* media queries */
+@media screen and (max-width: 400px) {
+    nav{
+        min-width: 450px;
+    }
+    .container{
+        min-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    .bottom{
+        min-width: 450px;
+    }
+    .songlistplay .timestamp{
+        
+    }
+    .songItemContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .songItem{
+        padding: 10px;
+        min-width: 300px;
+
+    }
+    
+}
